@@ -1,3 +1,2 @@
 # Processing_exercize
 Processing ビジュアルデザイナーとアーティストのためのプログラミング入門
-### Processing ビジュアルデザイナーとアーティストのためのプログラミング入門の勉強用
