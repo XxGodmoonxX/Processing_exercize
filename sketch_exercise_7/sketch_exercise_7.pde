@@ -1,37 +1,83 @@
-//exercise1
-//char a = 'n';
-//char b = '2';
-//char c = 'Q';
-//char d = '-';
-//char e = '!';
-//println(a);
-//println(b);
-//println(c);
-//println(d);
-//println(e);
+//void setup() {
+//  size(600, 600);
+//}
 
-//exercise2
-//String name = "Motoki Watanabe";
-//String age = "20";
-//println(name + " " + age);
-//println(age);
+//void draw() {
+//  frameRate(12);
+//  println(mouseX + " : " + mouseY);
+//  line(mouseX, mouseY, pmouseX, pmouseY);
+//}
+
+//exercise1~2
+//void setup() {
+//  size(600, 600);
+//}
+
+//void draw() {
+//  frameRate(3);
+//  background(200);
+//  line(mouseX, mouseY, pmouseX, pmouseY);
+//  rect(mouseX, mouseY, 100, 100);
+//  if (mousePressed == true) {
+//    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
+//    rect(width - mouseX, height - mouseY, 100, 100);
+//  }
+//}
 
 //exercise3
-//String long_sentence = "aaaaa bbbbbbbbb sssssss dddddddddd";
-//println(long_sentence);
+//void setup() {
+//  size(600, 600);
+//}
+
+//void draw() {
+//  line(100, 100, 500, 100);
+//  line(200, 200, 600, 200);
+//  if ((keyPressed == true) && (key == 'D')) {
+//    background(200);
+//    line(100, 100, 500, 500);
+//    line(200, 200, 200, 600);
+//  }
+//}
 
 //exercise4
-//String s1 = "Azzurro aaaaaaaaaaaa";
-//String s2 = "AB";
-//println(s1.length());
-//println(s2.length());
+//void setup() {
+//  size(600, 600);
+//}
+
+//void draw() {
+//  ellipse(300, 300, 200, 200);
+  
+//}
+
+//void mousePressed() {
+//  fill(#D65959);
+//}
+
+//void mouseReleased() {
+//  fill(#597BD6);
+//}
+
+//void mouseMoved() {
+//  fill(#59D68B);
+//}
+
+//void mouseDragged() {
+//  fill(#D6D259);
+//}
 
 //exercise5
-String a1 = "Motoki";
-println(a1.startsWith("A"));
-println(a1.charAt(0));
-println(a1.charAt(1));
-println(a1.charAt(2));
-println(a1.charAt(3));
-println(a1.charAt(4));
-println(a1.charAt(5));
+void setup() {
+  size(600, 600);
+}
+
+void draw() {
+  if (mouseX <= 100) {
+    cursor(HAND);
+  } else if (mouseX < 300) {
+    cursor(CROSS);
+  } else if (mouseX < 500) {
+    cursor(ARROW);
+  } else if (mouseX >= 500) {
+    cursor(TEXT);
+  }
+}

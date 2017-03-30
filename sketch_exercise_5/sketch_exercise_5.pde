@@ -1,83 +1,37 @@
-//void setup() {
-//  size(600, 600);
-//}
-
-//void draw() {
-//  frameRate(12);
-//  println(mouseX + " : " + mouseY);
-//  line(mouseX, mouseY, pmouseX, pmouseY);
-//}
-
 //exercise1~2
-//void setup() {
-//  size(600, 600);
-//}
+//int x;
+//x = 1;
+//float y;
+//y = 0.2347;
+//println(x + y);
 
-//void draw() {
-//  frameRate(3);
-//  background(200);
-//  line(mouseX, mouseY, pmouseX, pmouseY);
-//  rect(mouseX, mouseY, 100, 100);
-//  if (mousePressed == true) {
-//    line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
-//    rect(width - mouseX, height - mouseY, 100, 100);
-//  }
-//}
+//float a = 2.5;
+//println(a);
 
 //exercise3
-//void setup() {
-//  size(600, 600);
-//}
-
-//void draw() {
-//  line(100, 100, 500, 100);
-//  line(200, 200, 600, 200);
-//  if ((keyPressed == true) && (key == 'D')) {
-//    background(200);
-//    line(100, 100, 500, 500);
-//    line(200, 200, 200, 600);
-//  }
-//}
+//size(300, 500);
+//rect(width/10, height/10, width/2, height/2);
+//line(width/10, height/10, width/10 + width/2, height/10 + height/2);
 
 //exercise4
-//void setup() {
-//  size(600, 600);
-//}
-
-//void draw() {
-//  ellipse(300, 300, 200, 200);
-  
-//}
-
-//void mousePressed() {
-//  fill(#D65959);
-//}
-
-//void mouseReleased() {
-//  fill(#597BD6);
-//}
-
-//void mouseMoved() {
-//  fill(#59D68B);
-//}
-
-//void mouseDragged() {
-//  fill(#D6D259);
-//}
+//size(600, 1000);
+//float center;
+//center = width/2;
+//ellipse(center, center, 100, 100);
+//ellipse(center+100, center+100, 50, 50);
+//ellipse(center+200, center+200, 30, 30);
 
 //exercise5
-void setup() {
-  size(600, 600);
-}
-
-void draw() {
-  if (mouseX <= 100) {
-    cursor(HAND);
-  } else if (mouseX < 300) {
-    cursor(CROSS);
-  } else if (mouseX < 500) {
-    cursor(ARROW);
-  } else if (mouseX >= 500) {
-    cursor(TEXT);
-  }
-}
+size(600, 1000);
+int margin_top;
+margin_top = height/50;
+line(margin_top, margin_top, margin_top*2, margin_top);
+strokeWeight(2);
+stroke(#4449A0);
+line(margin_top, margin_top*2, margin_top*4, margin_top*2);
+strokeWeight(3);
+stroke(#44A099);
+line(margin_top, margin_top*3, margin_top*6, margin_top*3);
+strokeWeight(5);
+stroke(#44A044);
+line(margin_top, margin_top*5, margin_top*8, margin_top*5);
