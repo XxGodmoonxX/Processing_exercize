@@ -36,4 +36,57 @@
 //}
 
 //exercise3
-size(600, 600);
+//size(600, 600);
+//for (int degree = 0; degree < 180; degree++) {
+//  float angle = radians(degree);
+//  println(sin(angle));
+//  ellipse(sin(angle) * 600, sin(angle) * 600, 200, 200);
+//}
+
+//exercise4
+//void setup() {
+//  size(600, 600);
+//  //noStroke();
+//  //fill(0);
+//}
+
+//void draw() {
+//  float angle = 0;
+//  for (int x = 0; x < width ; x += 5) {
+//    fill(0);
+//    float y = 50 + (sin(angle) * 35);
+//    line(0, 50, 600, 50);
+//    rect(x, y, 2, 4);
+    
+//    float y_2 = 150 + (cos(angle) * 35);
+//    float y_4 = 50 + (cos(angle) * 35);
+//    line(0, 150, 600, 150);
+//    point(x, y_4);
+//    point(x, y_2);
+    
+//    float y_3 = 250 + (sin(angle) * 35);
+//    line(0, 250, 600, 250);
+//    noFill();
+//    ellipse(x, y_3, 50, 50);
+    
+//    angle += PI/40;
+//  }
+//}
+
+//exercise5
+void setup() {
+  size(600, 600);
+  fill(0);
+}
+
+void draw() {
+  float angle = atan2(mouseY, mouseX);
+  println(angle);
+  float deg = degrees(angle);
+  background(204);
+  text(int(deg), 50, 50);
+  ellipse(mouseX, mouseY, 8, 8);
+  //rotate(angle);
+  //line(0, 0, 3600, 0);
+  line(0, 0, mouseX, mouseY);
+}
